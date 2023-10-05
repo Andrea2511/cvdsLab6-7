@@ -1,6 +1,5 @@
 package co.edu.escuelaing.cvds.lab7;
 
-import co.edu.escuelaing.cvds.lab7.model.Configuration;
 import co.edu.escuelaing.cvds.lab7.service.ConfigurationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -21,11 +20,6 @@ public class Lab7Application {
 	public CommandLineRunner run() throws Exception {
 		return (args) -> {
 
-			System.out.println("Adding Configurations....");
-			configurationService.addConfiguration(new Configuration("premio", "800000"));
-
-			System.out.println("\nGetting all configurations....");
-			configurationService.getAllConfigurations().forEach(configuration -> System.out.println(configuration));
 		};
 	}
 

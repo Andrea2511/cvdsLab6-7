@@ -43,4 +43,5 @@ public class ConfigurationService {
     public String getPremio() {
         return configurationRepository.findByPropiedad("premio").get(0).getValor();
     }
+    
 }
